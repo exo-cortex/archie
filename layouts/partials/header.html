@@ -51,4 +51,6 @@
 	<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 	{{- end }}
 	{{- end }}
+
+	{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 </head>

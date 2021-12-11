@@ -60,4 +60,5 @@
 	{{- end }}
 
 	{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+	{{ if .Params.vectorjs }}{{ partial "helpers/vectorjs.html" . }}{{ end }}
 </head>
